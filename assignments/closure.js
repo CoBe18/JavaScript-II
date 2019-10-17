@@ -1,4 +1,4 @@
-// == Challenge 1: Write your own closure ==
+// === Challenge 1: Write your own closure ===
 // Write a closure of your own creation.
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
