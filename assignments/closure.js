@@ -1,8 +1,30 @@
-// ==== Challenge 1: Write your own closure ====
+// === Challenge 1: Write your own closure ===
 // Write a closure of your own creation.
 // Keep it simple! Remember a closure is just a function
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
+
+function privatefunction() {
+      alert('hello');
+  }
+
+  function publicfunction() {
+    console.log (privatefunction);
+      };
+  
+
+
+
+
+function buildContor(i) { 
+  var contor = i;
+  var displayContor = function() {
+      console.log(contor++);
+      contor++;
+  };
+  return displayContor; 
+}
+
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
@@ -31,3 +53,15 @@ const counterFactory = () => {
   // `increment` should increment a counter variable in closure scope and return it.
   // `decrement` should decrement the counter variable and return it.
 };
+
+
+let counter = 0;
+function addToTimer() {
+  for (let i = 0; i < 7; i++) {
+    setInterval(() => {
+     console.log(counter += 1);
+    }, 1000)
+  }
+}
+
+console.log(addToTimer())
